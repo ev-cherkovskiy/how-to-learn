@@ -53,8 +53,7 @@
 .header__title {
   width: 730px;
   /*ниже позиционируем элемент*/
-  position: absolute;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   align-self: center;
   z-index: 2;
   /*ниже задаём свойства текста*/
@@ -76,6 +75,9 @@
   line-height: 25px;
   font-weight: normal;
   text-align: left;
+  /*ниже обнуляем свойства абзаца*/
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 
 .header__link {
@@ -91,6 +93,8 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+  /*ниже делае так, чтоб картинка не меняла пропорции при заполнении блока*/
+  object-fit: cover;
 }
 
 .header__square-pic {
@@ -211,6 +215,10 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  /*ниже сбрасываем стили списка*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .table_theme_dark {
@@ -243,24 +251,25 @@
 стиля заголовка ячейки по заданию, поэтому в модификаторе .table__heading_theme_dark нет необходимости*/
 
 .table__text {
-  margin: 0;
   /*ниже задаём свойства текста*/
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
+  /*ниже обнуляем свойства абзаца*/
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 /*введения модификатора для ячейки .table__cell_theme_dark достаточно для полного изменения
 стиля текста ячейки по заданию, поэтому в модификаторе .table__text_theme_dark нет необходимости*/
 
-/*в ячейках table__cell может находиться либо текст, либо текст + источник,
-причём оформление текста с источником отличается от обычного только верхним отступом.
-поэтому добавим класс cell-reference (ссылка в ячейке), который добавляет этот верхний отступ*/
-.cell-reference {
-  margin-top: 20px;
+/*ниже добавляем отступы между частями текста*/
+.table__text:nth-child(3) {
+ margin-top: 20px;
 }
 
 .feynman {
-  height: 890px;
+  /*ограничим только минимальное значение высоты блока*/
+  min-height: 890px;
   /*ниже настраиваем фон*/
   background-color: #F2F2F2;
   background-image: url("../images/feynman.png");
@@ -322,6 +331,8 @@
 .kaufman__triangle {
   width: 877px;
   height: 877px;
+  background-image: url("../images/kaufman-triangle.svg");
+  background-size: contain;
   position: absolute;
   right: -210px;
   z-index: 0;
@@ -329,12 +340,17 @@
 
 .footer {
   background-color: #1F1F1F;
+  /*ниже устанавливаем высоту блока: учитывая отступы, она должна быть не меньше 350px*/
+  min-height: 250px;
+  padding: 60px 0 40px 0;
+   /*ниже делаем блок флекс-контейнером и центрируем элемент, содержащийся в нём*/
+  display: flex;
+  justify-content: center;
 }
 
 .footer__columns {
   width: 90%;
-  min-height: 350px;
-  margin: 60px auto 40px;
+  margin: 0;
   /*ниже делаем этот блок флекс-контейнером, чьи элементы -- колонки -- расположены в ряд,
   и позиционируем элементы вдоль основной оси*/
   display: flex;
@@ -343,7 +359,6 @@
 }
 
 .footer__column {
-  /*ниже делаем каждую колонку флекс-контейнером, позиционируем элементы от начала (т.е. от верхней границы)*/
   display: flex;
   flex-flow: column nowrap;
   position: relative;
@@ -356,21 +371,22 @@
   font-weight: normal;
 }
 
-/*ниже делем первую колонку широкой*/
+/*ниже делем первую колонку широкой и позиционируем элементы*/
 .footer__column_content_copyright {
   flex-basis: 711px;
+  justify-content: space-between;
 }
 
-/*ниже делаем заголовки полужирными и добавляем отступ снизу, заодно удаляя другие отступы*/
+/*ниже делаем заголовки полужирными и убираем отступы*/
 .footer__column-heading {
   font-weight: bold;
-  margin: 0 0 20px 0;
+  margin: 0;
 }
 
-/*ниже делаем блок с ссылками флекс-контейнером*/
+/*ниже добавляем блоку с ссылками верхний и нижний отступы*/
 .footer__column-links {
-display: flex;
-flex-flow: column nowrap;
+  margin-top: 20px;
+  margin-bottom: 16px;
 }
 
 /*ниже приводим ссылки к потребному виду и добавляем нижние отступы*/
@@ -378,19 +394,17 @@ flex-flow: column nowrap;
   text-decoration: none;
   color: #FFF;
   margin-bottom: 10px;
+  display: block;
 }
 
-/*ниже для каждой последней ссылки меняем нижний отступ*/
+/*ниже для каждой последней ссылки убираем нижний отступ*/
 .footer__column-link:last-of-type {
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 
 .footer__author {
   margin: 18px 0;
   line-height: 25px;
-  /*ниже позиционируем подпись*/
-  position: absolute;
-  bottom: 0;
 }
 
 .footer__social-icon {
