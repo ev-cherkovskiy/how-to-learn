@@ -1,0 +1,5 @@
+/*ниже добавляем блоку с ссылками верхний и нижний отступы*/
+.footer__column-links {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}

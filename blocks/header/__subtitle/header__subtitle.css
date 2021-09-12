@@ -1,0 +1,16 @@
+.header__subtitle {
+  width: 388px;
+  /*ниже позиционируем элемент*/
+  position: absolute;
+  margin-left: 64px;
+  bottom: 30px;
+  z-index: 2;
+  /*ниже задаём свойства текста*/
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  text-align: left;
+  /*ниже обнуляем свойства абзаца*/
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}

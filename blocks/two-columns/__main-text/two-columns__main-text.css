@@ -1,0 +1,8 @@
+.two-columns__main-text {
+  width: 80%;
+  /*ниже представляем основной текст как флекс-контейнер с элементами, расположенными в колонку,
+  и позиционируем эти элементы вдоль основной оси*/
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  /*ниже позиционируем элемент*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  /*ниже делае так, чтоб картинка не меняла пропорции при заполнении блока*/
+  object-fit: cover;
+}

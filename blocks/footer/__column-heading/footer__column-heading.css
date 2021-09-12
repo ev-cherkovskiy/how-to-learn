@@ -1,0 +1,5 @@
+/*ниже делаем заголовки полужирными и убираем отступы*/
+.footer__column-heading {
+  font-weight: bold;
+  margin: 0;
+}

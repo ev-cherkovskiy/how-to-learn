@@ -1,0 +1,9 @@
+.footer__columns {
+  width: 90%;
+  margin: 0;
+  /*ниже делаем этот блок флекс-контейнером, чьи элементы -- колонки -- расположены в ряд,
+  и позиционируем элементы вдоль основной оси*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}

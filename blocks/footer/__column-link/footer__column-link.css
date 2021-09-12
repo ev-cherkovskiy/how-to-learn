@@ -1,0 +1,17 @@
+/*ниже приводим ссылки к потребному виду и добавляем нижние отступы*/
+.footer__column-link {
+  text-decoration: none;
+  color: #FFF;
+  margin-bottom: 10px;
+  display: block;
+  transition: opacity .3s ease-out;
+}
+
+/*ниже для каждой последней ссылки убираем нижний отступ*/
+.footer__column-link:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__column-link:hover {
+  opacity: 0.6;
+}

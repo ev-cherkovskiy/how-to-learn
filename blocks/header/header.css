@@ -1,0 +1,16 @@
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+
+  /*ниже делаем блок header флекс-контейнером, добавляем ему нижний отступ
+  и задаём ему свойство position: relative;, чтоб позиционировать элементы внутри него абсолютно*/
+  display: flex;
+  margin-bottom: 100px;
+  position: relative;
+  /*ниже задаём цвет фона*/
+  background-color: #F2F2F2;
+  /*ниже запрещаем переполнение секции header при вращении квадрата*/
+  overflow: hidden;
+}

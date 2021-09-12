@@ -1,0 +1,9 @@
+.techniques {
+  /*ниже делаем секцию с карточками и заголовками флекс-контейнером, добавляем ему нижний отступ,
+  центрируем элементы вдоль поперечной оси*/
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 auto 100px;
+}

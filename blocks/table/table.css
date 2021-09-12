@@ -1,0 +1,12 @@
+.table {
+  width: 1100px;
+  /*ниже делаем саму таблицу флекс-контейнером, разрешаем перенос элементов на новую строку
+  и позиционируем элементы вдоль главной оси*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /*ниже сбрасываем стили списка*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

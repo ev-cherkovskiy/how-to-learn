@@ -1,0 +1,14 @@
+.table__text {
+  /*ниже задаём свойства текста*/
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  /*ниже обнуляем свойства абзаца*/
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+/*ниже добавляем отступы между частями текста*/
+.table__text:nth-child(3) {
+  margin-top: 20px;
+ }

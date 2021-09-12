@@ -1,0 +1,11 @@
+.two-columns__brief {
+  width: 175px;
+  /*ниже убираем внешние отступы*/
+  margin: 0;
+  /*ниже задаём свойства текста*/
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #2F80ED;
+  text-align: left;
+}

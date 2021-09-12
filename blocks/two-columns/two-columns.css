@@ -1,0 +1,9 @@
+.two-columns {
+  width: 80%;
+  /*ниже делаем блок флекс-контейнером и центрируем его*/
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+  /*ниже позиционируем колонки вдоль основной оси*/
+  justify-content: space-between;
+}

@@ -1,0 +1,14 @@
+.kaufman {
+  overflow: hidden;
+  background-color: #1F1F1F;
+  /*ниже делаем блок заголовки-таблица флекс-контейнером, запрещаем перенос элементов на новую строку
+  и позиционируем элементы вдоль поперечной оси*/
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-bottom: 90px;
+  position: relative;
+  padding-bottom: 90px;
+
+  overflow: hidden;
+}

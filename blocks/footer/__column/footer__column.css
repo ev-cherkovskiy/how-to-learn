@@ -1,0 +1,12 @@
+.footer__column {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  justify-content: flex-start;
+  /*ниже задаём свойства стандартного текста в элементах подвала*/
+  color: #FFF;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}

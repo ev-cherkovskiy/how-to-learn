@@ -1,0 +1,16 @@
+.khan__buy-link {
+  color: #2F80ED;
+  text-decoration: none;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0 0 0 48px;
+  /*ниже ограничиваем высоту, чтоб анимация при наведении курсора
+  срабатывала только при наведении непосредственно на надпись, а не на поле под ней*/
+  height: min-content;
+  transition: opacity .3s ease-out;
+}
+
+.khan__buy-link:hover {
+  opacity: 0.6;
+}

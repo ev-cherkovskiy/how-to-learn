@@ -1,0 +1,14 @@
+.two-columns__paragraph {
+  /*ниже задаём нижний внешний отступ для каждого абзаца и обнуляем ненужные отступы*/
+  margin: 0 0 30px 0;
+  /*ниже задаём свойства текста*/
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  text-align: left;
+}
+
+/*ниже убираем нижний внешний отступ для последнего абзаца*/
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
