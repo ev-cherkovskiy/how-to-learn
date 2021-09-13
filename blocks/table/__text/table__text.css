@@ -9,6 +9,6 @@
 }
 
 /*ниже добавляем отступы между частями текста*/
-.table__text:nth-child(3) {
+.table__text:not(:only-of-type) {
   margin-top: 20px;
  }

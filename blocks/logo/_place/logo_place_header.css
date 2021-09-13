@@ -4,4 +4,9 @@
   height: 32px;
   top: 30px;
   left: 64px;
+  transition: opacity .3s ease-out;
+}
+
+.logo_place_header:hover {
+  opacity: 0.6;
 }

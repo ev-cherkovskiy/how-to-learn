@@ -3,7 +3,9 @@
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   padding: 0;
   margin: 0;
+  /*добавляем свойство gap для позиционирования*/
+  gap: 0 100px;
 }
