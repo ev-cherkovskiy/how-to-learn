@@ -7,3 +7,5 @@
 * Флексбокс-вёрстка;
 * Анимации и трансформации (средствами CSS);
 * Организация системы классов и файловой структуры по [методологии БЭМ](https://ru.bem.info/methodology/quick-start/).
+
+Проект представлен на [GitHub Pages](https://ev-cherkovskiy.github.io/how-to-learn/)
